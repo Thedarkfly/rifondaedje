@@ -4,34 +4,187 @@
 \usepackage{lmodern}
 \usepackage[a4paper]{geometry}
 \usepackage{babel}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{makecell}
+\usepackage{mathtools}
+
+\newcommand{\un}[2]{$\underbracket[1pt][1pt]{\text{#1}}_\text{#2}$}
+
 \begin{document}
 
 \title{Sur la standardisation de la langue wallonne}
 \author{Gaëtan Abeloos}
-\date{\today\\Version 0.1}
+\date{\today}
 
 \maketitle
 
 \section{Introduction}
 
-Histoire de la langue...
-Motivation derrière standardisation...
-Histoire de la standardisation...
+\subsection{Histoire du wallon}
 
-\section{Méthode}
+\subsection{Motivation pour une standardisation}
 
-\subsection{Variétés}
-\subsection{}
-Consensus...
-Double standardisation...
-Sorwalondes...
+\subsection{Histoire des efforts de standardisation}
 
-\section{Lettres et sons}
+\subsection{Domaine d'utilisation}
+
+\section{Diacritiques}
+
+\paragraph{e} au lieu de è
+\paragraph{-eu} au lieu de -eû
+
+accent circonflexe enlevé avant (consonne vocale voisée et r ?)
+
+\section{Sons}
+
+\paragraph{k}
+\paragraph{s}
+\paragraph{z}
+
+\section{Méthodes}
 
 \subsection{Diasystèmes}
 
-\section{Conjugaison}
+\paragraph{å}
+\paragraph{ae}
+\paragraph{ai}
+\paragraph{ea}
+\paragraph{én}
+\paragraph{êye}
+\paragraph{h}
+\paragraph{jh}
+\paragraph{ô}
+\paragraph{oe}
+\paragraph{oen}
+\paragraph{oi}
+\paragraph{oy}
+\paragraph{sch}
+\paragraph{sh}
+\paragraph{xh}
+
+\subsection{Forme majoritaire}
+
+\subsection{Double standardisation}
+
+\subsection{Forme la plus typique}
+
+\paragraph{ey} plutôt que îy
+\paragraph{o} plutôt que ou
+\paragraph{a} plutôt que e
+\paragraph{é} plutôt que i
+\paragraph{-ou} plutôt que u
+\paragraph{-eure} plutôt que -ure
+
+\begin{landscape}
 
 \section{Liste de mots non-exhaustive}
+
+\begin{longtable}{|l|l|l|l|l|l|l|l||l|l|}
+	\hline
+	Notice & Français & Ni1 & Ch61 & Na1 & L1 & My1 & Ne16 & Standard & Justification \\ \hline
+	1 & AIGUILLE & èguîye & èwîye & awîye & awèye & awèye & awîye & aweye & \un{aw}{M}\un{ey}{SW}e \\ \hline
+	2 & ANNÉE & anéye & anéye & anéye & an.nêye & an.né & anéye & anêye & \un{a}{M}n\un{êye}{BF} \\ \hline
+	3 & BIEN & bĩ & bén & bin & bin & bin & bin & bén & b\un{én}{BF} \\ \hline
+	4 & BOEUF & bieu & bou & boû & boûf & boû & boû & boû & b\un{oû}{M} \\ \hline
+	5 & BORGNE & bwagne & bwagne & bwagne & bwègne & bwagne & bwagne & boigne & b\un{oi}{BF}gne \\ \hline
+	6 & BOUTEILLE & boutèye & boutaye & botèye & botèye & botèye & botèye & botaye & b\un{o}{SW}t\un{a}{SW}ye \\ \hline
+	7 & CENDRE & cinde & cinde & cinde & cinde & cène & çane & cinde & c\un{ind}{M}e \\ \hline
+	8 & CERISE & cèrîje & cèréje & cèréje & cèlîhe & cèlîhe & cèrîje & ceréjhe & ce\un{r}{M}\un{é}{SW}\un{jh}{BF}e \\ \hline
+	9 & CHAMBRE & tchambe & tchåmbe & tchambe & tchambe & tchambe & tchambe & tchambe & ~ \\ \hline
+	10 & CHANVRE & tchanve & tchane & tchène & tchène & tchène & tchanve & tchene & tch\un{en}{M}e \\ \hline
+	11 & CHAPEAU & tchapia & tchapia & tchapia & tchapê & tchapê & tchapé & tchapea & tchap\un{ea}{BF} \\ \hline
+	12 & CHAR & tchâr & tchôr & tchôr & tchår & tchâr & tchôr & tchår & tch\un{å}{BF}r \\ \hline
+	13 & CHARPENTIER & tchèrpètî & tchèrpètî & tchèrpètî & tchèp’tî & tchèp’tî & tchèrpètî & \makecell[l]{tcheptî,\\ tcherpetî} & ~ \\ \hline
+	14 & CHASSEUR & cacheû & tchèsseû & tchèsseû & tchèsseû & tchèsseûr & tchèsseû & tchesseu & \un{tchess}{M}eu \\ \hline
+	15 & CHAUSSE (BAS) & tchôsse & tchôsse & tchôsse & tchåsse & tchâsse & tchôsse & tchåsse & tch\un{å}{BF}sse \\ \hline
+	16 & CHER & tchêr & tchêr & tchêr & tchîr & tchîr & tchîr & tchir & tch\un{i}{M}r \\ \hline
+	17 & CHEVEU(X) & tch’feûs & tch’fias & tch’fias & dj’vès & dj’vès & tch’fés & tchveas & tchv\un{ea}{BF}s \\ \hline
+	18 & CHIEN & tchî & tchén & tchin & tchin & tchèŋ & tchin & tchén & tch\un{én}{BF} \\ \hline
+	19 & CINQ & cénq & cénq & cinq & cinq & cinq & cinq & cénk & c\un{én}{BF}k \\ \hline
+	20 & CLOCHE & cloke & clotche & clotche & cloke & cloke & clotche & \makecell[l]{cloke,\\clotche} & ~ \\ \hline
+	21 & CLOU & clô & clô & clô & clå & clâ & clô & clå & cl\un{å}{BF} \\ \hline
+	22 & CONNAÎTRE & coun’wète & conèche & conèche & k’nohe & k’nohe & conuche & \makecell[l]{conoxhe,\\cnoxhe} & c\un{o}{M}no\un{xh}{BF}e \\ \hline
+	23 & COUTURE & cousture & coustœre & costeure & costeûre & costore & costure & costeure & c\un{o}{SW}st\un{eu}{SW}re \\ \hline
+	24 & CRAIE & cwè & croye & crôye & crôye & crôye & crôye & croye & \un{cr}{M}\un{oy}{BF}e \\ \hline
+	25 & CROÛTE & crousse & crousse & crosse & crosse & crosse & crosse & crosse & cr\un{o}{SW}sse \\ \hline
+	26 & CUIR & cûr & cûr & cû & cûr & cûr & cûr & cure & \\ \hline
+	27 & DENT & dint & dint & dint & dint & dêt & dint & dint & ~ \\ \hline
+	28 & DESCEN(DRE) & diskin- & diskin- & dichin- & dihin- & dihin- & dichin- & dischin- & ~ \\ \hline
+	29 & DIMANCHE & dîmègne & dîmègne & dîmègne & dîmègne & dîmègne & dîmagne & dimegne & ~ \\ \hline
+	30 & EAU & eûwe & eûwe & éwe & êwe & êwe & éwe & aiwe & ~ \\ \hline
+	31 & ÉCHELLE & èskîye & èscôle & chôle & håle & håle & chôle & schåle & ~ \\ \hline
+	32 & ÉCUME & èscume & èscume & chume & home & home & chume & schome & ~ \\ \hline
+	33 & ENGRAISSER & ècrach- & ècrach- & ècrôch- & ècråh- & ècråh- & acrach- & ecråxh- & ~ \\ \hline
+	34 & ENSEMBLE & -šène & -šène & -šone & -sson.ne & -ssonle & -sson.ne & -shonne & ~ \\ \hline
+	35 & ÉPINE & èspine & spène & spène & spène & spine & spine & spene & ~ \\ \hline
+	36 & ÉQUERRE & équerre & équerre & scwére & scwére & scwére & scwére & scwere & ~ \\ \hline
+	37 & ÉTÉ & èsté & èsté & èsté & osté & èsté & èstè & esté & ~ \\ \hline
+	38 & ÉTOILE & èstwèle & stwale & stwale & steûle & steûle & ètwèle & stoele & ~ \\ \hline
+	39 & FAIM & fan.y & fwin & fwin & fin & fin.ŋ & fwin & fwin & ~ \\ \hline
+	40 & FER & fiêr & fiêr & fiêr & fiér & fièr & fiêr & fier & ~ \\ \hline
+	41 & FÉTU & fèstu & fustu & fistu & fistou & fistou & fistu & fistou & ~ \\ \hline
+	42 & FEUILLE & feuye & fouye & fouye & fouye & foye & fouye & foye & ~ \\ \hline
+	43 & FLÉAU & flaya & flaya & flaya & floyê & floyê & floyê & flayea & ~ \\ \hline
+	44 & FRÈRE & frêre & frére & frére & fré & frére & frére & fré & ~ \\ \hline
+	45 & FROID & fwèd & freud & frwad & freûd & freûd & fwad & froed & ~ \\ \hline
+	46 & GENOU & djinou & djinou & djino & djino & djino & djino & djino & ~ \\ \hline
+	47 & GLACE & glace & glace & glace & glèce & glace & glace & glaece & ~ \\ \hline
+	48 & GUÊPE & wèsse & wèspe & wèsse & wasse & wèpse & waspe & wesse & ~ \\ \hline
+	49 & HACHE & ape & èpe & èpe & hèpe & hèpe & ~ & hepe & ~ \\ \hline
+	50 & HAIE & aye & aye & aye & håye & hâye & haye & håye & ~ \\ \hline
+	51 & HERSE & ièrse & ièsse & îpe & îpe & épe & îpe & îpe & ~ \\ \hline
+	52 & JAMBE & djambe & djåmbe & djambe & djambe & djambe & djambe & djambe & ~ \\ \hline
+	53 & LANGUE & langue & lêwe & linwe & linwe & lêwe & lêwe & linwe & ~ \\ \hline
+	54 & LE (article) & èl & li & lì & li & lu & lu & li & ~ \\ \hline
+	55 & LIT & lit & lét & lét & lét & lèt & lit & lét & ~ \\ \hline
+	56 & MAISON & mêzo & môjo & môjone & mohone & mâhon & môjon & \makecell[l]{måjhon,\\måjhone} & ~ \\ \hline
+	57 & MAÎTRE & mésse & mésse & mêsse & mêsse & mêsse & mésse & mwaisse & ~ \\ \hline
+	58 & MANCHE & manche & mantche & mantche & mantche & mâtche & mantche & mantche & ~ \\ \hline
+	59 & MARCHÉ & martchî & martchî & martchî & martchî & martchî & martchî & martchî & ~ \\ \hline
+	60 & MÉTIER & mèstî & mèstî & mèstî & mèstî & mèstî & mèstî & mestî & ~ \\ \hline
+	61 & MIROIR & murwè & mirwè & murwè & mureû & mureû & mireû & muroe & ~ \\ \hline
+	62 & MORT & moûrt & mwârt & mwârt & mwêrt & mwart & mwârt & moirt & ~ \\ \hline
+	63 & MORTE & moûrte & mwate & mwate & mwète & mwète & mwète & moite & ~ \\ \hline
+	64 & MOUCHE & mouche & mouche & mouche & mohe & mohe & mouche & moxhe & ~ \\ \hline
+	65 & MOYEU & moyeû & moyou & moyou & moyou & moyou & moyou & moyoû & ~ \\ \hline
+	66 & MÛR & meûr & meûr & meûr & maweur & maw & meûr & \makecell[l]{meur,\\maweur} & ~ \\ \hline
+	67 & OS(ER) & oûz- & ôz- & waz- & wèz- & waz- & waz- & oiz- & ~ \\ \hline
+	68 & PAIN & pan.y & pwin & pwin & pan & pan & pwin & \makecell[l]{pwin,\\pan} & ~ \\ \hline
+	69 & PEINE & pin.ne & pwène & pwinne & pon.ne & pône & pône & poenne & ~ \\ \hline
+	70 & PERCHE & pièrce & pièce & pièce & pîce & péce & pîce & \makecell[l]{pîce,\\pietche} & ~ \\ \hline
+	71 & PERDU & pièrdu & pièrdù & pièrdù & pièrdou & pièrdou & pièrdù & pierdou & ~ \\ \hline
+	72 & PERDUE & pièrduwe & pièrdeuwe & pièrdeuwe & pièrdowe & pièrdou & pyèrdûye & pierdowe & ~ \\ \hline
+	73 & PIED & pî & pî & pî & pî & pî & pî & pî & ~ \\ \hline
+	74 & PLUME & plume & plome & plùme & plome & ploume & plume & plome & ~ \\ \hline
+	75 & POIRE & pwêre & pwâre & pwâre & peûre & peûre & pwâre & poere & ~ \\ \hline
+	76 & POISSON & pèchon & pèchon & pèchon & pèhon & pèhon & pèchon & pexhon & ~ \\ \hline
+	77 & PORTER & poûrter & pwarter & pwarter & pwèrter & pwarter & pwartè & poirter & ~ \\ \hline
+	78 & POURCEAU & pourcha & pourcia & pourcia & pourcê & pourcê & couchèt & pourcea & ~ \\ \hline
+	79 & POUSSIÈRE & poûssiêre & poûssiêre & poûssêre & poûssîre & poûssîre & poûssîre & poûssire & ~ \\ \hline
+	80 & PUISER & pûj- & satch- & poûj- & poûh- & pûh- & poûh- & poujh- & ~ \\ \hline
+	81 & QUEUE & keuye & kèwe & keuwe & cowe & cawe & cawe & cawe & ~ \\ \hline
+	82 & REGAIN & wayin & wayin & wayin & wayin & wayin & wayén & waeyén & ~ \\ \hline
+	83 & RÈGLE & rîle & rîle & rîle & rûle & rûle & rîle & rîle & ~ \\ \hline
+	84 & RONCE & ronche & ronche & ronche & ronhe & rôhe & ronche & ronxhe & ~ \\ \hline
+	85 & ROUE & rouwe & rouwe & reuwe & rowe & rou & rouwe & rowe & ~ \\ \hline
+	86 & RUE & ruwe & reuwe & reuwe & rowe & rou & rouwe & rowe & ~ \\ \hline
+	87 & RUELLE & ruwèle & rouwale & rouwale & rouwale & rouwale & rouwale & rouwale & ~ \\ \hline
+	88 & SAC & satch & satch & satch & sètch & sètch & satch & saetch & ~ \\ \hline
+	89 & SCIER & soyî & soyî & soyî & soyî & soyî & soyé & soyî & ~ \\ \hline
+	90 & SEMAINE & sumin.ne & sawène & samwin.ne & samin.ne & samêne & sumin.ne & samwinne & ~ \\ \hline
+	91 & SOIF & swa & swa & swa & seû & seû & sè & soe & ~ \\ \hline
+	92 & SOLEIL & solèy & solia & solia & solo & solo & solê & \makecell[l]{solea,\\solo} & ~ \\ \hline
+	93 & TABLE & tâbe & tâbe & tôve & tåve & tâve & tâbe & tåve & ~ \\ \hline
+	94 & TENDRE & têre & têre & tinre & tinre & têre & têre & tinre & ~ \\ \hline
+	95 & TÊTE & tièsse & tièsse & tièsse & tièsse & tièsse & tièsse & tiesse & ~ \\ \hline
+	96 & \makecell[l]{UN (art.\\indéfini, devant\\consonne)} & in & in & on & on & ô & ô & on & ~ \\ \hline
+	97 & VEINE & vin.ne & win.ne & win.ne & von.ne & vône & vône & voenne & ~ \\ \hline
+	98 & VIE & vîye & vîye & vîye & vèye & vèye & vîye & veye & ~ \\ \hline
+	99 & VILLAGE & vilâdje & vilâdje & viladje & viyèdje & viyèdje & viyadje & viyaedje & ~ \\ \hline
+	100 & (il) VOIT & vwèt & vwèt & vwèt & veût & veût & vèt & voet & ~ \\ \hline
+\end{longtable}
+
+\end{landscape}
 
 \end{document}
