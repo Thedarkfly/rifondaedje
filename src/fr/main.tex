@@ -8,12 +8,22 @@
 \usepackage{pdflscape}
 \usepackage{makecell}
 \usepackage{mathtools}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{tipa}
 
 \newcommand{\un}[2]{$\underbracket[1pt][1pt]{\text{#1}}_\text{#2}$}
+\newcommand{\BF}[1]{\color{violet}\un{#1}{BF}\color{black}}
+\newcommand{\M}[1]{\color{blue}\un{#1}{M}\color{black}}
+\newcommand{\SW}[1]{\color{orange}\un{#1}{SW}\color{black}}
+\newcommand{\A}[1]{\color{red}\un{#1}{A}\color{black}}
+\newcommand{\IN}[1]{\color{brown}\un{#1}{IN}\color{black}}
 
 \begin{document}
 
-\title{Sur la standardisation de la langue wallonne}
+\title{Sur la standardisation de l'orthographe wallonne}
 \author{Gaëtan Abeloos}
 \date{\today}
 
@@ -21,26 +31,106 @@
 
 \section{Introduction}
 
-\subsection{Histoire du wallon}
+\subsection{Contexte}
 
-\subsection{Motivation pour une standardisation}
+Le wallon est une langue en danger. L'entièreté de la population wallonne ou presque est désormais née dans un foyer francophone. Les dernières personnes dont la langue wallonne était maternelle ont presque toutes disparu. Bien que l'état lui porte une certaine reconnaissance comme l'une des langues régionales endogènes, il n'existe pour ainsi dire aucune volonté politique de rétablir son statut de langue vivante.
 
-\subsection{Histoire des efforts de standardisation}
+Néanmoins, plusieurs acteurs du patrimoine wallon ont un désir commun\,: préserver et revaloriser cette langue. Une de ces associations, Li Rantoele, a travaillé sur le statut de langue écrite du wallon. Notamment, elle a réussi à lui attribuer un code ISO à deux lettres, 'wa', réservé aux langues écrites.
 
-\subsection{Domaine d'utilisation}
+Cela fait longtemps que le wallon est écrit. Actuellement, le système le plus utilisé est nommé Feller du nom de son inventeur. Cette orthographe peut être caractérisée comme suit\,:
+\begin{itemize}
+	\item Elle est très phonétique. Elle utilise beaucoup de diacritiques et de signes de ponctuation pour transcrire le plus fidèlement possible la prononciation des locuteurs.
+	\item Elle s'inspire du français lorsque le parallèle peut être fait avec le wallon. Par exemple, l'utilisation des `e' muets est similaire à l'orthographe française.
+\end{itemize}
+L'othographe Feller est donc facile à lire pour les francophones et idéale pour comparer les différences de prononciations entre locuteurs.
 
-\section{Diacritiques}
+C'est justement ce dernier point qui pose problème\,: le système Feller est conçu pour souligner les différences entre les parlers wallons là où certains aimeraient un système orthographique qui, au contraire, fédère et soit représentatif de la forte similarité qui existe en réalité entre les différents dialectes wallons.
 
-\paragraph{e} au lieu de è
-\paragraph{-eu} au lieu de -eû
+Un des grands projets de Li Rantoele est donc de standardiser l'orthographe du wallon, standardisation nommée "Rifondou walon". De nombreuses publications ont déjà développé les raisons motivant le développement d'un standard orthographique wallon. Pour commencer, citons quelques objectifs que la standardisation orthographique ne vise pas.
 
-accent circonflexe enlevé avant (consonne vocale voisée et r ?)
+\paragraph{Ne pas gommer les particularités locales des parlers wallons.} Contrairement à certaines standardisations qui se font sur base d'un unique dialecte, souvent dominant, remplaçant tous les autres, l'objectif de la standardisation du wallon est de trouver une manière d'écrire que tous les wallophones reconnaîtraient. Ils pourraient lire un texte en wallon standard et le prononcer à la manière de chez eux, comme ils pourraient écrire un texte standard sur base de leurs pensées prononcées naturellement.
 
-\section{Sons}
+\paragraph{Ne pas modifier la prononciation des wallophones.} L'objectif du wallon standard est d'être subordonné au wallon oral et non le contraire. Si innovation linguistique il y a, elle devrait d'abord apparaître dans le parler et puis seulement l'orthographe serait adaptée.
 
-\paragraph{k}
-\paragraph{s}
-\paragraph{z}
+Voici, au contraire, les objectifs d'un standard orthographique wallon.
+
+\paragraph{Un mot, une orthographe.} Actuellement, les ouvrages wallons peuvent être publiés en autant de versions qu'il existe de manière de prononcer la langue. On se retrouve donc avec six versions du livre "Mes mille premiers mots" de Heather Amery\,: en wallo-picard, wallon malmédien, wallon méridional, wallon central, wallon liégeois, et wallon occidental. Ceci peut représenter un obstacle à la réintroduction du wallon à l'école, s'il faut éditer autant de manuels qu'il n'y a de prononciation. La question des ouvrages collaboratifs se pose également. Si le Wikipédia wallon devait être écrit en Feller, y aurait-il des articles orthographiés avec le Feller de Liège et d'autres de Namur ? Lorsqu'un internaute carolo modifie ou complète un article écrit en Feller liégeois, doit-il adapter son orthographe pour conserver une cohérence, tout réécrire en Feller carolo, ou aura-t-on un article dont l'orthographe change de paragraphe en paragraphe voire de phrase en phrase ?
+
+\paragraph{Augmenter l'intercompréhension des wallophones.} Une orthographe compatible avec toutes les prononciations wallonnes serait un excellent outil d'apprentissage pour apprendre la richesse et la variété qui existent dans l'aire dialectale wallonne. Un des reproches faits à la langue wallonne est le manque d'intercompréhension dès que l'on sort de sa localité. Si l'on apprenait les différentes manières de prononcer un mot lorsqu'on apprend à l'écrire, ce problème ne se poserait pas.
+
+À ces objectifs globaux se rajoutent des objectifs secondaires qui sont les suivants.
+
+\paragraph{Être le plus familier possible pour les wallophones actuels.} In fine, l'objectif de Li Rantoele est que leur système orthographique standard soit adopté par le plus grand nombre. Il y a donc une motivation de modifier le moins possible le système Feller, au corpus conséquent et utilisé par les wallophones depuis longtemps.
+
+\paragraph{Simplifier l'orthographe.} Le Feller comporte plusieurs difficultés qui le distinguent des autres langues écrites. Notamment, l'usage important de la ponctuation à des fins phonétiques et la présence de très nombreux diacritiques. Le standard wallon vise à supprimer tant que faire se peut ces caractéristiques qui ralentissent l'écriture.
+
+\paragraph{S'éloigner du français.} L'aire linguistique du wallon est actuellement presque exclusivement francophone. Le wallon a longtemps coexisté avec le français. Ces deux langues ont depuis longtemps entretenu une relation hiérarchique\,: le wallon la langue du peuple et le français la langue de l'élite. Un des objectifs des membres de Li Rantoele est d'orienter le standard orthographique pour privilégier la forme la plus <<\,typique\,>>, c'est-à-dire, chose rarement avouée, la forme la plus différente du français.
+
+La standardisation du wallon par l'association Li Rantoele ne s'est pas faite en un jour et n'est pas encore finie aujourd'hui. Elle émane de discussions, de correspondances, de textes successifs et itératifs. Beaucoup de cette documentation est trouvable plus ou moins difficilement sur internet. Parfois, le serveur original d'un texte a été mis hors-ligne et le texte aurait été perdu à tout jamais sans organismes d'archivage comme Archive.org.
+
+Résultat, il n'existe à la connaissance de l'auteur, aucun document formel définissant l'état actuel de la standardisation, les méthodes appliquées et les motivations derrières les choix qui ont été faits. Toutes ces informations existent mais sont loin d'être accessibles facilement.
+
+\subsection{Objectif de ce document}
+
+Ce document tente de rassembler et synthétiser tous les choix qui ont été pris au cours des années et qui résultent en le wallon standard tel qu'il existe dans le dictionnaire DTW ou le wiktionnaire wallon.
+
+L'inventaire de toutes les règles orthographiques permettra également de faire une évaluation du wallon standard par rapport à ses objectifs. Notamment, un effort est fait pour identifier les choix arbitraires dont la justification manque ou est d'ordre personnel.
+
+Ce document est voué à être mis à jour si d'autres développements sont faits à la standardisation du wallon ou qu'une meilleure justification est trouvée.
+
+\section{Règles générales}
+
+\subsection{Lettres terminales}
+
+L'orthographe Feller fait beaucoup d'analogies avec le français. Notamment, les terminaisons des mots sont souvent identiques en Feller qu'en français même lorsqu'elles ne sont pas prononcées. L'orthographe standard supprime toutes les lettres terminales et ne garde que celles qui
+\begin{itemize}
+	\item sont parfois prononcées dans tous les cas. Par exemple\,: <<\,trop\,>> prononcé /\textipa{t\;ROp}/ en wallon oriental, <<\,deus\,>> prononcé /\textipa{d\o:s}/ en Haute-Ardenne.
+	\item csont parfois prononcées lors des liaisons. Par exemple\,: <<\,mins\,>>, <<\,sovint\,>>, les participes présents.
+\end{itemize}
+Exemples de suppression de lettres terminales : <<\,timps\,>> en Feller devient <<\,tins\,>> en standard, <<\,pîd\,>> devient <<\,pî\,>>, <<\,dwègt\,>> devient <<\,doet\,>>, <<\,cwârps\,>> devient <<\,coir\,>>.
+
+\subsection{Clitiques}
+
+Il y a plusieurs manières de noter les clitiques en orthographe Feller en utilisant des espaces, des apostrophes et/ou des tirets. En orthographe standard, les clitiques sont agglutinées sans ponctuation pour former des mots à part entière. Voici des exemples :
+\begin{itemize}
+	\item <<\,a li\,>> écrit en Feller <<\,à l'\,>>,  <<\,al'\,>>, ou <<\,à-l'\,>> est écrit en standard <<\,al\,>>.
+	\item <<\,so li\,>> écrit en Feller <<\,so l'\,>>, <<\,sol'\,>> ou <<\,so-l'\,>> est écrit en standard <<\,sol\,>>.
+	\item <<\,dji li\,>> écrit en Feller <<\,djè l'\,>>, <<\,djèl'\,>> ou <<\,djè-l'\,>> est écrit en standard <<\,djel\,>>.
+\end{itemize}
+Certaines expressions figées peuvent également être agglutinées :
+\begin{itemize}
+	\item <<\,a çte eûre\,>> peut être écrit <<\,asteure\,>>.
+	\item <<\,tot l' minme\,>> peut être écrit <<\,tolminme\,>>.
+	\item <<\,come i fåt\,>> peut être écrit <<\,comifåt\,>>.
+\end{itemize}
+
+\subsection{Diacritiques}
+
+Le wallon standard cherche à simplifier l'orthographe en réduisant au maximum l'usage de diacritiques.
+
+\paragraph{`e' au lieu de `è'.} En français, le phonème /\textipa{@}/ est très courant. Ainsi, il est orthographié avec la lettre `e' sans accent. Ce sont les variations autour de ce phonème de base, moins courantes, qui sont marquées d'un diacritique. En wallon, c'est le phonème /\textipa{E}/ qui est le plus courant, phonème orthographié `è' en français et donc aussi en Feller. A contrario, le phonème /\textipa{@}/ n'existe pas et le proche /\textipa{\oe}/ est orthographié `eu'. Par conséquent, il n'y a aucune confusion en wallon standard lorsque l'accent grave est supprimé de l'orthographe `e' qui est toujours prononcée /\textipa{E}/\,; ce qui diminue drastiquement le nombre de diacritiques.
+
+\paragraph{`-eu', `-eur' au lieu de `-eû', `-eûr'.} L'accent circonflexe sert, en orthographe Feller à marquer la longueur et la fermeture d'une voyelle. Les terminaisons en `-eû' et en `-eûr', transcrivant les phonèmes /\textipa{\o:}/ et /\textipa{\o:\;R}/ varient en fait beaucoup en longueur et en ouverture à travers l'aire dialectale wallonne\,: ils sont parfois prononcés /\textipa{\oe}/ et /\textipa{\oe\;R}/. Les accents circonflexes sont donc supprimés et le locuteur prononcera le phonème aussi long et fermé qu'il en a l'habitude.
+
+\paragraph{`i', `u', `ou' au lieu de `î', `û', `oû' devant une consonne voisée.} Devant toutes les consonnes voisées (/\textipa{b}/, /\textipa{d}/, /\textipa{\t{dZ}}/, /\textipa{g}/, /\textipa{Z}/, /\textipa{v}/, /\textipa{z}/) et devant /\textipa{\;R}/ et /\textipa{j}/, les voyelles /\textipa{i:}/, /\textipa{y:}/ et /\textipa{u:}/, orthographiées en Feller `î', `û' et `oû' respectivement, sont toujours longues. L'accent circonflexe n'apporte donc aucune information phonétique et est retiré en orthographe standard.
+
+\subsection{Ponctuation phonétique}
+
+En orthographe Feller, certains signes de ponctuation sont utilisés à des fins phonétiques. Ils sont supprimés autant que possible en orthographe standard.
+
+\paragraph{`e' muet (ou doublement du `s') au lieu d'une minute marquant la prononciation d'une consonne finale.} En Feller, certains mots sont orthographiés avec une consonne finale muette. Lorsqu'au contraire cette consonne finale est prononcée, l'orthographe Feller utilise majoritairement la technique française qui est d'ajouter un `e' muet en fin de mot. Par exemple, <<\,prind\,>> est prononcé /\textipa{p\;R\~E}/ tandis que <<\,prinde\,>> est prononcé /\textipa{p\;R\~E:t}/. Mais parfois, la consonne finale est marquée avec une minute, une méthode plus traditionnellement wallonne. Par exemple, <<\,poyous\,>> est prononcé /\textipa{pO.'ju}/ alors que <<\,awous´\,>> est prononcé /\textipa{a.'wus}/. L'orthographe standardisée évite la coexistence de ces deux techniques et seul le `e' muet est utilisé pour marquer qu'une consonne finale se prononce\,: <<\,awousse\,>>. Dans quelques exceptions avec un `s' final prononcé, la minute de Feller est remplacée en orthographe standard par un doublement du `s'. Par exemple\,: <<\,ass fwin\,>> au lieu de <<\,as´ fwin\,>>\,; <<\,måss\,>> au lieu de <<\,mås´\,>>.
+
+\paragraph{Suppression du point indiquant une voyelle nasale suivie d'une consonne nasale.} En orthographe française, deux consonnes qui se suivent indiquent que la voyelle précédente est ouverte et courte. Ce n'est pas le cas en orthographe Feller qui caractérise la voyelle à l'aide de diacritiques et où deux consonnes écrites se prononcent toutes les deux (gémination). Comme les consonnes nasales ne sont jamais géminées en wallon, ce point typographique n'apporte aucune information phonétique mais sert surtout d'aide visuelle aux lecteurs francophones qui pourraient le lire à la française. L'orthographe standard supprime ce point\,; par exemple <<\,nonne\,>> au lieu de <<\,non.ne\,>>.
+
+\paragraph{Suppression des apostrophes et `e' muets au milieu d'un mot.} Certaines voyelles sont élidées en wallon, c'est-à-dire qu'elles ne sont pas prononcées. Ces voyelles sont parfois remplacées en Feller par une apostrophe. L'orthographe standard la supprime\,; par exemple <<\,dji cmince\,>> au lieu de <<\,dji c'mince\,>>. En wallon, deux consonnes peuvent se suivre sans qu'elles ne soient séparées par une voyelle (élidée ou non). En orthographe Feller, une apostrophe ou, imitant le français, un `e' muet peuvent être insérés entre les consonnes. En orthographe standard, ceux-si sont supprimés\,; par exemple <<\,havter\,>> au lieu de <<\,hav'ter\,>> ou <<\,haveter\,>>. Finalement, l'orthographe Feller utilise l'apostrophe pour différencier deux lettres qui pourraient être prises pour un digramme. L'orthographe standard supprime ces apostrophes, ce qui ne permet plus de faire la différenciation avec un digramme. Les mots concernés deviennent donc des exceptions à retenir. Par exemple\,: <<\,Walonreye\,>> au lieu de <<\,Walon'reye\,>>, <<\,edagner\,>> au lieu de <<\,edag'ner\,>>, <<\,dissiervi\,>> au lieu de <<\,dis'siervi\,>>.
+
+\paragraph{Suppression des tirets marquant les liaisons.} En orthographe Feller, les liaisons sont habituellement explicitées avec un tiret. La prononciation de ces liaisons n'étant pas généralisées, l'orthographe standard supprime ces tirets et laisse les locuteurs prononcer ou non les liaisons.
+
+\subsection{Phonèmes}
+
+\paragraph{/k/} ex : khatchî au lieu de c'hatchî
+\paragraph{/s/}
+\paragraph{/z/}
 
 \section{Méthodes}
 
@@ -60,21 +150,53 @@ accent circonflexe enlevé avant (consonne vocale voisée et r ?)
 \paragraph{oi}
 \paragraph{oy}
 \paragraph{sch}
+Orthographiée esch après consonne si on prononce sk
 \paragraph{sh}
 \paragraph{xh}
 
 \subsection{Forme majoritaire}
 
+\begin{itemize}
+	\item Majorité absolue
+	\item Majorité simple + majorité absolue parmi les 3 grandes villes
+\end{itemize}
+
+\paragraph{i} plutôt que u
+\paragraph{a} plutôt que u
+
 \subsection{Double standardisation}
 
 \subsection{Forme la plus typique}
 
-\paragraph{ey} plutôt que îy
-\paragraph{o} plutôt que ou
+\paragraph{rien} plutôt que -r
 \paragraph{a} plutôt que e
 \paragraph{é} plutôt que i
-\paragraph{-ou} plutôt que u
 \paragraph{-eure} plutôt que -ure
+\paragraph{ey} plutôt que îy
+\paragraph{o} plutôt que ou ou u
+\paragraph{-ou} plutôt que -u
+\paragraph{pw, mw} plutôt que p, w
+
+\subsection{Forme la plus intermédiaire}
+
+ine-ene-eune-one
+in-èn-on
+nos seréns
+
+\subsection{Choix arbitraires}
+
+\paragraph{a} au lieu de o
+\paragraph{e} au lieu de é, p.ex. dans -ére
+\paragraph{Formes nasalisées} plutôt que dénasalisées
+
+\section{Conclusion et propositions}
+
+\paragraph{Betchfessî qu} prononcée cw à Liège et k partout ailleurs
+\paragraph{Voyelle épenthétique contre prosthétique}\,: en opposition au projet d'avoir une orthographe par mot\,: un texte écrit par un carolo sera différent d'un texte écrit par un liégeois
+\paragraph{Une seule forme, épenthétique}\,: on sait qu'on ne doit prononcer le i que si elle ne s'élise pas
+\paragraph{ch et j} plutôt que tch et dj, puisque les sons ch sont transcrits par xh, sch ou sh, et j par jh
+\paragraph{gi et ge} plutôt que gui et gue
+\paragraph{Minutes} pour consonnes prononcées en fin de mot ou pour éviter la confusion avec une voyelle nasale
 
 \begin{landscape}
 
@@ -82,107 +204,107 @@ accent circonflexe enlevé avant (consonne vocale voisée et r ?)
 
 \begin{longtable}{|l|l|l|l|l|l|l|l||l|l|}
 	\hline
-	Notice & Français & Ni1 & Ch61 & Na1 & L1 & My1 & Ne16 & Standard & Justification \\ \hline
-	1 & AIGUILLE & èguîye & èwîye & awîye & awèye & awèye & awîye & aweye & \un{aw}{M}\un{ey}{SW}e \\ \hline
-	2 & ANNÉE & anéye & anéye & anéye & an.nêye & an.né & anéye & anêye & \un{a}{M}n\un{êye}{BF} \\ \hline
-	3 & BIEN & bĩ & bén & bin & bin & bin & bin & bén & b\un{én}{BF} \\ \hline
-	4 & BOEUF & bieu & bou & boû & boûf & boû & boû & boû & b\un{oû}{M} \\ \hline
-	5 & BORGNE & bwagne & bwagne & bwagne & bwègne & bwagne & bwagne & boigne & b\un{oi}{BF}gne \\ \hline
-	6 & BOUTEILLE & boutèye & boutaye & botèye & botèye & botèye & botèye & botaye & b\un{o}{SW}t\un{a}{SW}ye \\ \hline
-	7 & CENDRE & cinde & cinde & cinde & cinde & cène & çane & cinde & c\un{ind}{M}e \\ \hline
-	8 & CERISE & cèrîje & cèréje & cèréje & cèlîhe & cèlîhe & cèrîje & ceréjhe & ce\un{r}{M}\un{é}{SW}\un{jh}{BF}e \\ \hline
+	\textbf{Notice} & \textbf{Français} & \textbf{Ni1} & \textbf{Ch61} & \textbf{Na1} & \textbf{L1} & \textbf{My1} & \textbf{Ne16} & \textbf{Standard} & \textbf{Justification} \endhead \hline
+	1 & AIGUILLE & èguîye & èwîye & awîye & awèye & awèye & awîye & aweye & \M{aw}\SW{ey}e \\ \hline
+	2 & ANNÉE & anéye & anéye & anéye & an.nêye & an.né & anéye & anêye & \M{a}n\BF{êye} \\ \hline
+	3 & BIEN & bĩ & bén & bin & bin & bin & bin & bén & b\BF{én} \\ \hline
+	4 & BOEUF & bieu & bou & boû & boûf & boû & boû & boû & b\M{oû} \\ \hline
+	5 & BORGNE & bwagne & bwagne & bwagne & bwègne & bwagne & bwagne & boigne & b\BF{oi}gne \\ \hline
+	6 & BOUTEILLE & boutèye & boutaye & botèye & botèye & botèye & botèye & botaye & b\M{o}t\SW{a}ye \\ \hline
+	7 & CENDRE & cinde & cinde & cinde & cinde & cène & çane & cinde & c\M{ind}e \\ \hline
+	8 & CERISE & cèrîje & cèréje & cèréje & cèlîhe & cèlîhe & cèrîje & ceréjhe & ce\M{r}\SW{é}\BF{jh}e \\ \hline
 	9 & CHAMBRE & tchambe & tchåmbe & tchambe & tchambe & tchambe & tchambe & tchambe & ~ \\ \hline
-	10 & CHANVRE & tchanve & tchane & tchène & tchène & tchène & tchanve & tchene & tch\un{en}{M}e \\ \hline
-	11 & CHAPEAU & tchapia & tchapia & tchapia & tchapê & tchapê & tchapé & tchapea & tchap\un{ea}{BF} \\ \hline
-	12 & CHAR & tchâr & tchôr & tchôr & tchår & tchâr & tchôr & tchår & tch\un{å}{BF}r \\ \hline
+	10 & CHANVRE & tchanve & tchane & tchène & tchène & tchène & tchanve & tchene & tch\M{en}e \\ \hline
+	11 & CHAPEAU & tchapia & tchapia & tchapia & tchapê & tchapê & tchapé & tchapea & tchap\BF{ea} \\ \hline
+	12 & CHAR & tchâr & tchôr & tchôr & tchår & tchâr & tchôr & tchår & tch\BF{å}r \\ \hline
 	13 & CHARPENTIER & tchèrpètî & tchèrpètî & tchèrpètî & tchèp’tî & tchèp’tî & tchèrpètî & \makecell[l]{tcheptî,\\ tcherpetî} & ~ \\ \hline
-	14 & CHASSEUR & cacheû & tchèsseû & tchèsseû & tchèsseû & tchèsseûr & tchèsseû & tchesseu & \un{tchess}{M}eu \\ \hline
-	15 & CHAUSSE (BAS) & tchôsse & tchôsse & tchôsse & tchåsse & tchâsse & tchôsse & tchåsse & tch\un{å}{BF}sse \\ \hline
-	16 & CHER & tchêr & tchêr & tchêr & tchîr & tchîr & tchîr & tchir & tch\un{i}{M}r \\ \hline
-	17 & CHEVEU(X) & tch’feûs & tch’fias & tch’fias & dj’vès & dj’vès & tch’fés & tchveas & tchv\un{ea}{BF}s \\ \hline
-	18 & CHIEN & tchî & tchén & tchin & tchin & tchèŋ & tchin & tchén & tch\un{én}{BF} \\ \hline
-	19 & CINQ & cénq & cénq & cinq & cinq & cinq & cinq & cénk & c\un{én}{BF}k \\ \hline
+	14 & CHASSEUR & cacheû & tchèsseû & tchèsseû & tchèsseû & tchèsseûr & tchèsseû & tchesseu & \M{tch}\M{e}\M{ss}eu \\ \hline
+	15 & CHAUSSE (BAS) & tchôsse & tchôsse & tchôsse & tchåsse & tchâsse & tchôsse & tchåsse & tch\BF{å}sse \\ \hline
+	16 & CHER & tchêr & tchêr & tchêr & tchîr & tchîr & tchîr & tchir & tch\M{i}r \\ \hline
+	17 & CHEVEU(X) & tch’feûs & tch’fias & tch’fias & dj’vès & dj’vès & tch’fés & tchveas & tchv\BF{ea}s \\ \hline
+	18 & CHIEN & tchî & tchén & tchin & tchin & tchèŋ & tchin & tchén & tch\BF{én} \\ \hline
+	19 & CINQ & cénq & cénq & cinq & cinq & cinq & cinq & cénk & c\BF{én}k \\ \hline
 	20 & CLOCHE & cloke & clotche & clotche & cloke & cloke & clotche & \makecell[l]{cloke,\\clotche} & ~ \\ \hline
-	21 & CLOU & clô & clô & clô & clå & clâ & clô & clå & cl\un{å}{BF} \\ \hline
-	22 & CONNAÎTRE & coun’wète & conèche & conèche & k’nohe & k’nohe & conuche & \makecell[l]{conoxhe,\\cnoxhe} & c\un{o}{M}no\un{xh}{BF}e \\ \hline
-	23 & COUTURE & cousture & coustœre & costeure & costeûre & costore & costure & costeure & c\un{o}{SW}st\un{eu}{SW}re \\ \hline
-	24 & CRAIE & cwè & croye & crôye & crôye & crôye & crôye & croye & \un{cr}{M}\un{oy}{BF}e \\ \hline
-	25 & CROÛTE & crousse & crousse & crosse & crosse & crosse & crosse & crosse & cr\un{o}{SW}sse \\ \hline
-	26 & CUIR & cûr & cûr & cû & cûr & cûr & cûr & cure & \\ \hline
-	27 & DENT & dint & dint & dint & dint & dêt & dint & dint & ~ \\ \hline
-	28 & DESCEN(DRE) & diskin- & diskin- & dichin- & dihin- & dihin- & dichin- & dischin- & ~ \\ \hline
-	29 & DIMANCHE & dîmègne & dîmègne & dîmègne & dîmègne & dîmègne & dîmagne & dimegne & ~ \\ \hline
-	30 & EAU & eûwe & eûwe & éwe & êwe & êwe & éwe & aiwe & ~ \\ \hline
-	31 & ÉCHELLE & èskîye & èscôle & chôle & håle & håle & chôle & schåle & ~ \\ \hline
-	32 & ÉCUME & èscume & èscume & chume & home & home & chume & schome & ~ \\ \hline
-	33 & ENGRAISSER & ècrach- & ècrach- & ècrôch- & ècråh- & ècråh- & acrach- & ecråxh- & ~ \\ \hline
-	34 & ENSEMBLE & -šène & -šène & -šone & -sson.ne & -ssonle & -sson.ne & -shonne & ~ \\ \hline
-	35 & ÉPINE & èspine & spène & spène & spène & spine & spine & spene & ~ \\ \hline
-	36 & ÉQUERRE & équerre & équerre & scwére & scwére & scwére & scwére & scwere & ~ \\ \hline
-	37 & ÉTÉ & èsté & èsté & èsté & osté & èsté & èstè & esté & ~ \\ \hline
-	38 & ÉTOILE & èstwèle & stwale & stwale & steûle & steûle & ètwèle & stoele & ~ \\ \hline
-	39 & FAIM & fan.y & fwin & fwin & fin & fin.ŋ & fwin & fwin & ~ \\ \hline
-	40 & FER & fiêr & fiêr & fiêr & fiér & fièr & fiêr & fier & ~ \\ \hline
-	41 & FÉTU & fèstu & fustu & fistu & fistou & fistou & fistu & fistou & ~ \\ \hline
-	42 & FEUILLE & feuye & fouye & fouye & fouye & foye & fouye & foye & ~ \\ \hline
-	43 & FLÉAU & flaya & flaya & flaya & floyê & floyê & floyê & flayea & ~ \\ \hline
-	44 & FRÈRE & frêre & frére & frére & fré & frére & frére & fré & ~ \\ \hline
-	45 & FROID & fwèd & freud & frwad & freûd & freûd & fwad & froed & ~ \\ \hline
-	46 & GENOU & djinou & djinou & djino & djino & djino & djino & djino & ~ \\ \hline
-	47 & GLACE & glace & glace & glace & glèce & glace & glace & glaece & ~ \\ \hline
-	48 & GUÊPE & wèsse & wèspe & wèsse & wasse & wèpse & waspe & wesse & ~ \\ \hline
-	49 & HACHE & ape & èpe & èpe & hèpe & hèpe & ~ & hepe & ~ \\ \hline
-	50 & HAIE & aye & aye & aye & håye & hâye & haye & håye & ~ \\ \hline
-	51 & HERSE & ièrse & ièsse & îpe & îpe & épe & îpe & îpe & ~ \\ \hline
-	52 & JAMBE & djambe & djåmbe & djambe & djambe & djambe & djambe & djambe & ~ \\ \hline
-	53 & LANGUE & langue & lêwe & linwe & linwe & lêwe & lêwe & linwe & ~ \\ \hline
-	54 & LE (article) & èl & li & lì & li & lu & lu & li & ~ \\ \hline
-	55 & LIT & lit & lét & lét & lét & lèt & lit & lét & ~ \\ \hline
-	56 & MAISON & mêzo & môjo & môjone & mohone & mâhon & môjon & \makecell[l]{måjhon,\\måjhone} & ~ \\ \hline
-	57 & MAÎTRE & mésse & mésse & mêsse & mêsse & mêsse & mésse & mwaisse & ~ \\ \hline
-	58 & MANCHE & manche & mantche & mantche & mantche & mâtche & mantche & mantche & ~ \\ \hline
+	21 & CLOU & clô & clô & clô & clå & clâ & clô & clå & cl\BF{å} \\ \hline
+	22 & CONNAÎTRE & coun’wète & conèche & conèche & k’nohe & k’nohe & conuche & \makecell[l]{conoxhe,\\cnoxhe} & c\M{o}no\BF{xh}e \\ \hline
+	23 & COUTURE & cousture & coustœre & costeure & costeûre & costore & costure & costeure & c\M{o}st\M{eu}re \\ \hline
+	24 & CRAIE & cwè & croye & crôye & crôye & crôye & crôye & croye & \M{cr}\BF{oy}e \\ \hline
+	25 & CROÛTE & crousse & crousse & crosse & crosse & crosse & crosse & crosse & cr\M{o}sse \\ \hline
+	26 & CUIR & cûr & cûr & cû & cûr & cûr & cûr & cure & cu\M{re} \\ \hline
+	27 & DENT & dint & dint & dint & dint & dêt & dint & dint & d\M{in}t \\ \hline
+	28 & DESCEN(DRE) & diskin- & diskin- & dichin- & dihin- & dihin- & dichin- & dischin- & di\BF{sch}in- \\ \hline
+	29 & DIMANCHE & dîmègne & dîmègne & dîmègne & dîmègne & dîmègne & dîmagne & dimegne & dim\M{e}gne \\ \hline
+	30 & EAU & eûwe & eûwe & éwe & êwe & êwe & éwe & aiwe & \BF{ai}we \\ \hline
+	31 & ÉCHELLE & èskîye & èscôle & chôle & håle & håle & chôle & schåle & \BF{sch}\BF{å}le\ \\ \hline
+	32 & ÉCUME & èscume & èscume & chume & home & home & chume & schome & \BF{sch}\SW{o}me  \\ \hline
+	33 & ENGRAISSER & ècrach- & ècrach- & ècrôch- & ècråh- & ècråh- & acrach- & ecråxh- & \M{e}cr\BF{å}\BF{xh}- \\ \hline
+	34 & ENSEMBLE & -šène & -šène & -šone & -sson.ne & -ssonle & -sson.ne & -shonne & -\BF{sh}on\M{n}e \\ \hline
+	35 & ÉPINE & èspine & spène & spène & spène & spine & spine & spene & sp\M{e}ne \\ \hline
+	36 & ÉQUERRE & équerre & équerre & scwére & scwére & scwére & scwére & scwere & \M{s}c\M{w}\A{e}re \\ \hline
+	37 & ÉTÉ & èsté & èsté & èsté & osté & èsté & èstè & esté & \M{e}sté \\ \hline
+	38 & ÉTOILE & èstwèle & stwale & stwale & steûle & steûle & ètwèle & stoele & \M{s}t\BF{oe}le \\ \hline
+	39 & FAIM & fan.y & fwin & fwin & fin & fin.ŋ & fwin & fwin & f\M{w}\M{in}\M{\quad} \\ \hline
+	40 & FER & fiêr & fiêr & fiêr & fiér & fièr & fiêr & fier & fi\M{e}r \\ \hline
+	41 & FÉTU & fèstu & fustu & fistu & fistou & fistou & fistu & fistou & f\M{i}st\SW{ou} \\ \hline
+	42 & FEUILLE & feuye & fouye & fouye & fouye & foye & fouye & foye & f\SW{o}ye \\ \hline
+	43 & FLÉAU & flaya & flaya & flaya & floyê & floyê & floyê & flayea & fl\M{a}y\BF{ea} \\ \hline
+	44 & FRÈRE & frêre & frére & frére & fré & frére & frére & fré & fr\M{é}\SW{\quad} \\ \hline
+	45 & FROID & fwèd & freud & frwad & freûd & freûd & fwad & froed & f\M{r}\BF{oe}d \\ \hline
+	46 & GENOU & djinou & djinou & djino & djino & djino & djino & djino & djin\M{o} \\ \hline
+	47 & GLACE & glace & glace & glace & glèce & glace & glace & glaece & gl\BF{ae}ce \\ \hline
+	48 & GUÊPE & wèsse & wèspe & wèsse & wasse & wèpse & waspe & wesse & w\M{e}\M{ss}e \\ \hline
+	49 & HACHE & ape & èpe & èpe & hèpe & hèpe & ~ & hepe & \BF{h}\M{e}pe \\ \hline
+	50 & HAIE & aye & aye & aye & håye & hâye & haye & håye & \BF{h}\BF{å}ye \\ \hline
+	51 & HERSE & ièrse & ièsse & îpe & îpe & épe & îpe & îpe & \M{î}\M{p}e \\ \hline
+	52 & JAMBE & djambe & djåmbe & djambe & djambe & djambe & djambe & djambe & dj\M{am}be \\ \hline
+	53 & LANGUE & langue & lêwe & linwe & linwe & lêwe & lêwe & linwe & l\A{in}\M{w}e \\ \hline
+	54 & LE (article) & èl & li & lì & li & lu & lu & li, el & l\M{i} \\ \hline
+	55 & LIT & lit & lét & lét & lét & lèt & lit & lét & l\M{é}t \\ \hline
+	56 & MAISON & mêzo & môjo & môjone & mohone & mâhon & môjon & \makecell[l]{måjhon,\\måjhone} & m\BF{å}\BF{jh}\A{on} \\ \hline
+	57 & MAÎTRE & mésse & mésse & mêsse & mêsse & mêsse & mésse & mwaisse & m\SW{w}\BF{ai}sse \\ \hline
+	58 & MANCHE & manche & mantche & mantche & mantche & mâtche & mantche & mantche & m\M{an}\M{tch}e \\ \hline
 	59 & MARCHÉ & martchî & martchî & martchî & martchî & martchî & martchî & martchî & ~ \\ \hline
 	60 & MÉTIER & mèstî & mèstî & mèstî & mèstî & mèstî & mèstî & mestî & ~ \\ \hline
-	61 & MIROIR & murwè & mirwè & murwè & mureû & mureû & mireû & muroe & ~ \\ \hline
-	62 & MORT & moûrt & mwârt & mwârt & mwêrt & mwart & mwârt & moirt & ~ \\ \hline
-	63 & MORTE & moûrte & mwate & mwate & mwète & mwète & mwète & moite & ~ \\ \hline
-	64 & MOUCHE & mouche & mouche & mouche & mohe & mohe & mouche & moxhe & ~ \\ \hline
-	65 & MOYEU & moyeû & moyou & moyou & moyou & moyou & moyou & moyoû & ~ \\ \hline
+	61 & MIROIR & murwè & mirwè & murwè & mureû & mureû & mireû & muroe & m\M{u}r\BF{oe} \\ \hline
+	62 & MORT & moûrt & mwârt & mwârt & mwêrt & mwart & mwârt & moirt & m\BF{oi}rt \\ \hline
+	63 & MORTE & moûrte & mwate & mwate & mwète & mwète & mwète & moite & m\BF{oi}\M{\quad}te \\ \hline
+	64 & MOUCHE & mouche & mouche & mouche & mohe & mohe & mouche & moxhe & m\SW{o}\BF{xh}e \\ \hline
+	65 & MOYEU & moyeû & moyoû & moyoû & moyoû & moyoû & moyoû & moyoû & moy\M{oû} \\ \hline
 	66 & MÛR & meûr & meûr & meûr & maweur & maw & meûr & \makecell[l]{meur,\\maweur} & ~ \\ \hline
-	67 & OS(ER) & oûz- & ôz- & waz- & wèz- & waz- & waz- & oiz- & ~ \\ \hline
-	68 & PAIN & pan.y & pwin & pwin & pan & pan & pwin & \makecell[l]{pwin,\\pan} & ~ \\ \hline
-	69 & PEINE & pin.ne & pwène & pwinne & pon.ne & pône & pône & poenne & ~ \\ \hline
-	70 & PERCHE & pièrce & pièce & pièce & pîce & péce & pîce & \makecell[l]{pîce,\\pietche} & ~ \\ \hline
-	71 & PERDU & pièrdu & pièrdù & pièrdù & pièrdou & pièrdou & pièrdù & pierdou & ~ \\ \hline
-	72 & PERDUE & pièrduwe & pièrdeuwe & pièrdeuwe & pièrdowe & pièrdou & pyèrdûye & pierdowe & ~ \\ \hline
+	67 & OS(ER) & oûz- & ôz- & waz- & wèz- & waz- & waz- & oiz- & \BF{oi}z- \\ \hline
+	68 & PAIN & pan.y & pwin & pwin & pan & pan & pwin & \makecell[l]{pwin,\\pan} & pan\M{\quad} \\ \hline
+	69 & PEINE & pin.ne & pwène & pwinne & pon.ne & pône & pône & poenne & p\BF{oen}ne \\ \hline
+	70 & PERCHE & pièrce & pièce & pièce & pîce & péce & pîce & pîce, pietche & pie\A{tch}e \\ \hline
+	71 & PERDU & pièrdu & pièrdù & pièrdù & pièrdou & pièrdou & pièrdù & pierdou & pierd\SW{ou} \\ \hline
+	72 & PERDUE & pièrduwe & pièrdeuwe & pièrdeuwe & pièrdowe & pièrdou & pyèrdûye & pierdowe & pierd\SW{o}\M{we} \\ \hline
 	73 & PIED & pî & pî & pî & pî & pî & pî & pî & ~ \\ \hline
-	74 & PLUME & plume & plome & plùme & plome & ploume & plume & plome & ~ \\ \hline
-	75 & POIRE & pwêre & pwâre & pwâre & peûre & peûre & pwâre & poere & ~ \\ \hline
-	76 & POISSON & pèchon & pèchon & pèchon & pèhon & pèhon & pèchon & pexhon & ~ \\ \hline
-	77 & PORTER & poûrter & pwarter & pwarter & pwèrter & pwarter & pwartè & poirter & ~ \\ \hline
-	78 & POURCEAU & pourcha & pourcia & pourcia & pourcê & pourcê & couchèt & pourcea & ~ \\ \hline
-	79 & POUSSIÈRE & poûssiêre & poûssiêre & poûssêre & poûssîre & poûssîre & poûssîre & poûssire & ~ \\ \hline
-	80 & PUISER & pûj- & satch- & poûj- & poûh- & pûh- & poûh- & poujh- & ~ \\ \hline
-	81 & QUEUE & keuye & kèwe & keuwe & cowe & cawe & cawe & cawe & ~ \\ \hline
-	82 & REGAIN & wayin & wayin & wayin & wayin & wayin & wayén & waeyén & ~ \\ \hline
-	83 & RÈGLE & rîle & rîle & rîle & rûle & rûle & rîle & rîle & ~ \\ \hline
-	84 & RONCE & ronche & ronche & ronche & ronhe & rôhe & ronche & ronxhe & ~ \\ \hline
-	85 & ROUE & rouwe & rouwe & reuwe & rowe & rou & rouwe & rowe & ~ \\ \hline
-	86 & RUE & ruwe & reuwe & reuwe & rowe & rou & rouwe & rowe & ~ \\ \hline
-	87 & RUELLE & ruwèle & rouwale & rouwale & rouwale & rouwale & rouwale & rouwale & ~ \\ \hline
-	88 & SAC & satch & satch & satch & sètch & sètch & satch & saetch & ~ \\ \hline
+	74 & PLUME & plume & plome & plùme & plome & ploume & plume & plome & pl\SW{o}me \\ \hline
+	75 & POIRE & pwêre & pwâre & pwâre & peûre & peûre & pwâre & poere & p\BF{oe}re \\ \hline
+	76 & POISSON & pèchon & pèchon & pèchon & pèhon & pèhon & pèchon & pexhon & pe\BF{xh}on \\ \hline
+	77 & PORTER & poûrter & pwarter & pwarter & pwèrter & pwarter & pwartè & poirter & p\BF{oi}rt\M{er} \\ \hline
+	78 & POURCEAU & pourcha & pourcia & pourcia & pourcê & pourcê & couchèt & \makecell[l]{pourcea,\\(coshet)} & pour\M{c}\BF{ea} \\ \hline
+	79 & POUSSIÈRE & poûssiêre & poûssiêre & poûssêre & poûssîre & poûssîre & poûssîre & poûssire & poûss\SW{i}re \\ \hline
+	80 & PUISER & pûj- & satch- & poûj- & poûh- & pûh- & poûh- & \makecell[l]{poujh-,\\(saetch-)} & p\M{ou}\BF{jh}- \\ \hline
+	81 & QUEUE & keuye & kèwe & keuwe & cowe & cawe & cawe & cawe & c\A{a}\M{w}e \\ \hline
+	82 & REGAIN & wayin & wayin & wayin & wayin & wayin & wayén & waeyén & w\BF{ae}y\BF{én} \\ \hline
+	83 & RÈGLE & rîle & rîle & rîle & rûle & rûle & rîle & rîle & r\M{î}le \\ \hline
+	84 & RONCE & ronche & ronche & ronche & ronhe & rôhe & ronche & ronxhe & r\M{on}\BF{xh}e \\ \hline
+	85 & ROUE & rouwe & rouwe & reuwe & rowe & rou & rouwe & rowe & r\SW{o}\M{w}e \\ \hline
+	86 & RUE & ruwe & reuwe & reuwe & rowe & rou & rouwe & rowe & r\SW{o}\M{w}e \\ \hline
+	87 & RUELLE & ruwèle & rouwale & rouwale & rouwale & rouwale & rouwale & rouwale & r\M{ou}w\M{a}le \\ \hline
+	88 & SAC & satch & satch & satch & sètch & sètch & satch & saetch & s\BF{ae}tch \\ \hline
 	89 & SCIER & soyî & soyî & soyî & soyî & soyî & soyé & soyî & ~ \\ \hline
-	90 & SEMAINE & sumin.ne & sawène & samwin.ne & samin.ne & samêne & sumin.ne & samwinne & ~ \\ \hline
-	91 & SOIF & swa & swa & swa & seû & seû & sè & soe & ~ \\ \hline
-	92 & SOLEIL & solèy & solia & solia & solo & solo & solê & \makecell[l]{solea,\\solo} & ~ \\ \hline
-	93 & TABLE & tâbe & tâbe & tôve & tåve & tâve & tâbe & tåve & ~ \\ \hline
-	94 & TENDRE & têre & têre & tinre & tinre & têre & têre & tinre & ~ \\ \hline
+	90 & SEMAINE & sumin.ne & sawène & samwin.ne & samin.ne & samêne & sumin.ne & samwinne & s\M{a}m\SW{w}\M{in}ne \\ \hline
+	91 & SOIF & swa & swa & swa & seû & seû & sè & soe & s\BF{oe} \\ \hline
+	92 & SOLEIL & solèy & solia & solia & solo & solo & solê & \makecell[l]{solea,\\solo} & sol\BF{ea} \\ \hline
+	93 & TABLE & tâbe & tâbe & tôve & tåve & tâve & tâbe & tåve & t\BF{å}\M{v}e \\ \hline
+	94 & TENDRE & têre & têre & tinre & tinre & têre & têre & tinre & t\A{in}re \\ \hline
 	95 & TÊTE & tièsse & tièsse & tièsse & tièsse & tièsse & tièsse & tiesse & ~ \\ \hline
-	96 & \makecell[l]{UN (art.\\indéfini, devant\\consonne)} & in & in & on & on & ô & ô & on & ~ \\ \hline
-	97 & VEINE & vin.ne & win.ne & win.ne & von.ne & vône & vône & voenne & ~ \\ \hline
-	98 & VIE & vîye & vîye & vîye & vèye & vèye & vîye & veye & ~ \\ \hline
-	99 & VILLAGE & vilâdje & vilâdje & viladje & viyèdje & viyèdje & viyadje & viyaedje & ~ \\ \hline
-	100 & (il) VOIT & vwèt & vwèt & vwèt & veût & veût & vèt & voet & ~ \\ \hline
+	96 & \makecell[l]{UN (art.\\indéfini, devant\\consonne)} & in & in & on & on & ô & ô & on & \IN{on} \\ \hline
+	97 & VEINE & vin.ne & win.ne & win.ne & von.ne & vône & vône & voenne & \M{v}\BF{oen}ne \\ \hline
+	98 & VIE & vîye & vîye & vîye & vèye & vèye & vîye & veye & v\SW{e}ye \\ \hline
+	99 & VILLAGE & vilâdje & vilâdje & viladje & viyèdje & viyèdje & viyadje & viyaedje & vi\SW{y}\BF{ae}dje \\ \hline
+	100 & (il) VOIT & vwèt & vwèt & vwèt & veût & veût & vèt & voet & v\BF{oe}t \\ \hline
 \end{longtable}
 
 \end{landscape}
